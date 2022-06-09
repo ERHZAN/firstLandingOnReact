@@ -1,0 +1,131 @@
+%container {
+    margin-left: 15em;
+    margin-right: 15rem;
+
+    user-select: none;
+}
+
+
+// CSS
+.mainBody {
+    width: 100%;
+    min-height: 100rem;
+
+    display: block;
+    position: relative;
+    z-index: 50;
+
+    overflow: hidden;
+
+    &.MainHome1 {
+        background-image: url('../Imgs/Home.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        box-shadow: 0 0 100vh 250px #000 inset;
+    
+        .Container {
+            @extend %container;
+
+            user-select: none;
+        }
+    }
+    
+    &.MainHome2 {
+        background-image: url('../Imgs/Home2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        box-shadow: 0 0 100vh 250px #000 inset;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+    
+    &.MainHome3 {
+        background-image: url('../Imgs/Home3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        box-shadow: 0 0 100vh 250px #000 inset;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+    
+    &.MainWhoWeAre {
+        background: #e7e7e7 linear-gradient(90deg, #e7e7e7 50%, #ffffff 50%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+    
+    &.MainWhyUs {
+        background: #e7e7e7 linear-gradient(270deg, #e7e7e7 50%, #ffffff 50%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+    
+    &.MainSolutions {
+        background-image: url('../Imgs/Solutions.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        box-shadow: 0 0 100vh 250px #fff inset;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+
+    &.MainBenefits {  
+        .Container {
+            @extend %container;
+        }
+    }
+
+    &.MainOurTeam {  
+        .Container {
+            @extend %container;
+        }
+    }
+
+    &.MainCaseStudy {  
+        .Container {
+            @extend %container;
+        }
+    }
+
+    &.MainCertifications {  
+        .Container {
+            @extend %container;
+        }
+    }
+
+    &.MainInsights {    
+        .Container {
+            @extend %container;
+        }
+    }
+    
+    &.MainContactUs {
+        background-image: url('../Imgs/ContactUs/ContactUsBackground.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        box-shadow: 0 0 100vh 250px #000 inset;
+    
+        .Container {
+            @extend %container;
+        }
+    }
+}

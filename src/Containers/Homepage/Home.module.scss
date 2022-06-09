@@ -1,0 +1,78 @@
+.Homepage {
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 34rem;
+
+    .HomepageHeader {
+        color: #fff;
+        font-size: 6.4rem;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    
+        max-width: 110rem;
+    
+        margin: 0;
+    }
+
+    & > button {
+        margin-top: 3.5rem;
+    
+        border-radius: 0;
+        border: none;
+    
+        width: 55rem;
+        height: 8rem;
+    
+        background-color: #5ca7ff;
+    
+        font-size: 2.4rem;
+        color: #fff;
+        font-family: 'Aladin', sans-serif;
+        text-transform: uppercase;
+    
+        cursor: pointer;
+    }
+
+    .sliderBtns {
+        position: absolute;
+        left: 50%;
+        bottom: 5rem;
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sliderBtn {
+        display: inline-block;
+    
+        cursor: pointer;
+
+        &.notActive::before {
+            content: '';
+            display: inline-block;
+        
+            width: 2.5rem;
+            height: .4rem;
+        
+            opacity: .7;
+        
+            background-color: #fff;
+        
+            border-radius: 20%;
+        }
+
+        &.active::before {
+            content: '';
+            display: inline-block;
+        
+            width: 5rem;
+            height: .5rem;
+        
+            background-color: #fff;
+        
+            border-radius: 20%;
+        }
+    }
+}

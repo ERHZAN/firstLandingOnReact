@@ -1,0 +1,103 @@
+.WhyUsDiv {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    .WhyUsLeftSide {
+        display: inline-block;
+    
+        padding-top: 25rem;
+
+        & > h1 {
+            margin: 0;
+            margin-bottom: 10rem;
+        
+            font-size: 6.4rem;
+            font-family: 'Aladin', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+        
+        
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+            
+                bottom: -4rem;
+                left: 2.5rem;
+                position: absolute;
+            
+                width: 4.4rem;
+                height: .4rem;
+            
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+
+            &::after {
+                content: '';
+            
+                bottom: -4.8rem;
+                left: 0;
+                position: absolute;
+            
+                width: 7.9rem;
+                height: .4rem;
+            
+                background-color: #5CA7FF;
+                border-radius: 20%;
+            }
+
+            & > div::before {
+                content: '';
+            
+                bottom: -5.6rem;
+                left: .5rem;
+                position: absolute;
+            
+                width: 1.9rem;
+                height: .4rem;
+            
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+        }
+
+        & > p {
+            max-width: 73rem;
+        
+            font-size: 2.1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+        
+            margin: 3rem 0;
+        
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .WhyUsRightSide {
+        display: inline-block;
+    
+        padding-top: 25rem;
+
+        .rightImageWhyUsPage {
+            width: 50vw;
+            height: 100vh;
+        
+            background-image: url(../../Imgs//Notebook.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+}

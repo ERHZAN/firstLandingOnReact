@@ -1,0 +1,34 @@
+.FooterDiv {
+    width: 100%;
+    height: 9rem;
+
+    margin-top: auto;
+
+    background-color: #000;
+
+    position: relative;
+    z-index: 200;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 3rem;
+
+    user-select: none;
+
+    .FooterParagraph {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        vertical-align: center;
+        text-transform: uppercase;
+    
+        margin: 0;
+    }
+
+    .FooterIcons > a {
+        margin-right: 1.4rem;
+    }
+}

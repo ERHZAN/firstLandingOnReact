@@ -1,0 +1,25 @@
+@import-normalize;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    font-style: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+
+    min-width: 1000px;
+    min-height: 900px;
+}

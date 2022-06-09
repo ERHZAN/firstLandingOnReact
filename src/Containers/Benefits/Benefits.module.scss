@@ -1,0 +1,122 @@
+.BenefitsDiv {
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 20rem;
+
+    .BenefitsHeading {
+        margin: 0;
+        margin-bottom: 10rem;
+    
+        font-size: 6.4rem;
+        font-family: 'Aladin', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    
+        position: relative;
+        z-index: 1;
+    
+        &::before {
+            content: '';
+        
+            bottom: -3rem;
+            left: 2.5rem;
+            position: absolute;
+        
+            width: 44px;
+            height: 4px;
+        
+            background-color: #B589E0;
+            border-radius: 20%;
+        }
+        &::after {
+            content: '';
+        
+            bottom: -3.8rem;
+            left: 0;
+            position: absolute;
+        
+            width: 7.9rem;
+            height: .4rem;
+        
+            background-color: #5CA7FF;
+            border-radius: 20%;
+        }
+    
+        & > div::before {
+            content: '';
+        
+            bottom: -4.6rem;
+            left: .5rem;
+            position: absolute;
+        
+            width: 1.9rem;
+            height: .4rem;
+        
+            background-color: #B589E0;
+            border-radius: 20%;
+        }
+    }
+
+    .BenefitsCardsDiv {
+        margin-left: -150px;
+        margin-bottom: 10rem;
+    
+        width: 99vw;
+    
+        display: flex;
+    
+        overflow: hidden;
+
+        .BenefitsCard {
+            border-right: .1rem solid #000;
+            border-top: .1rem solid #000;
+        
+            padding-top: 5rem;
+            padding-left: 4rem;
+            padding-right: 9rem;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .BenefitsCardHeading {
+                font-size: 2.4rem;
+                font-family: 'Aladin', sans-serif;
+            
+                margin-bottom: 4rem;
+            }
+            
+            .BenefitsCardParagraph {
+                font-size: 2rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+    
+    .BenefitsBottomParagraph {
+        font-size: 2.4rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    
+        margin-left: -10rem;
+        margin-bottom: 5rem;
+    
+        max-width: 120rem;
+    }
+    
+    .BenefitsBottomButton {
+        font-size: 24px;
+        font-family: 'Aladin', sans-serif;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        margin-left: -10rem;
+    
+        &:hover {
+            color: #6746f8;
+            opacity: .8;
+        }
+    }
+}

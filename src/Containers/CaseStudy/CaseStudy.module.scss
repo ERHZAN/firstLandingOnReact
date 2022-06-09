@@ -1,0 +1,97 @@
+.CaseStudyDiv {
+    width: 98vw;
+    height: 100vh;
+    
+    padding-top: 30rem;
+    margin-left: -14rem;
+    
+    display: flex;
+    justify-content: space-between;
+
+    .CaseStudyFirstDiv {
+        width: 32%;
+        min-height: 50rem;
+        height: 40%;
+    
+        background-color: #ececec;
+    
+        padding-top: 5%;
+
+        .CaseStudyHeading {
+            margin: 0;
+            margin-bottom: 13rem;
+        
+            font-size: 6.4rem;
+            font-family: 'Aladin', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+        
+            position: relative;
+            z-index: 1;
+        
+            text-align: center;
+
+            &::before {
+                content: '';
+
+                bottom: -3rem;
+                left: 22%;
+                position: absolute;
+
+                width: 4.4rem;
+                height: .4rem;
+
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+
+            &::after {
+                content: '';
+            
+                bottom: -3.8rem;
+                left: 18%;
+                position: absolute;
+            
+                width: 7.9rem;
+                height: .4rem;
+            
+                background-color: #5CA7FF;
+                border-radius: 20%;
+            }
+
+            & > div::before {
+                content: '';
+            
+                bottom: -4.6rem;
+                left: 19%;
+                position: absolute;
+            
+                width: 1.9rem;
+                height: .4rem;
+            
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+        }
+    }
+
+    .CaseStudySecondDiv {
+        width: 32%;
+        min-height: 50rem;
+        height: 40%;
+    
+        background: url(../../Imgs/CaseStudy/secondDivImg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .CaseStudyThirdDiv {
+        width: 32%;
+        min-height: 50rem;
+        height: 40%;
+    
+        background: url(../../Imgs/CaseStudy/thirdDivImg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}

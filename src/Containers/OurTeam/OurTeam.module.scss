@@ -1,0 +1,173 @@
+// Templates
+
+%expPhotoHeader {
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #fff;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+%expPhotoParagraph {
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #fff;
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+// SCSS
+.OurTeamDiv {
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 23rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    .OurTeamTextBlock {
+
+        .OurTeamHeading {
+            margin: 0;
+            margin-bottom: 13rem;
+        
+            font-size: 6.4rem;
+            font-family: 'Aladin', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+        
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+            
+                bottom: -3rem;
+                left: 2.5rem;
+                position: absolute;
+            
+                width: 4.4rem;
+                height: .4rem;
+            
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+
+            &::after {
+                content: '';
+            
+                bottom: -3.8rem;
+                left: 0;
+                position: absolute;
+            
+                width: 7.9rem;
+                height: .4rem;
+            
+                background-color: #5CA7FF;
+                border-radius: 20%;
+            }
+
+            & > div::before {
+                content: '';
+            
+                bottom: -4.6rem;
+                left: .5rem;
+                position: absolute;
+            
+                width: 1.9rem;
+                height: .4rem;
+            
+                background-color: #B589E0;
+                border-radius: 20%;
+            }
+        }
+
+        .OurTeamParagraph {
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        
+            margin-bottom: 2.5rem;
+        
+            max-width: 46rem;
+        }
+    }
+
+    .OurTeamExpertsDiv {
+        display: flex;
+    
+        max-height: 100rem;
+    
+        .OurTeamExpertsSinglePhoto {
+            margin-right: 4.5rem;
+            margin-top: 20%;
+
+            .ExpertPhotoMan {
+                max-height: 34vh;
+                min-height: 32rem;
+                min-width: 24.7rem;
+            
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 0) 20%), url(../../Imgs/OurTeamExperts/Man.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            
+                text-align: center;
+                
+                .ExpertPhotoHeader {
+                    @extend %expPhotoHeader
+                }
+                
+                .ExpertPhotoParagraph {
+                    @extend %expPhotoParagraph
+                }
+            }
+        }
+
+        .OurTeamExpertsColumnDiv {
+            margin-right: 4.5rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .ExpertPhotoWoman {
+                max-height: 34vh;
+                min-height: 32rem;
+                min-width: 24.7rem;
+            
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 0) 20%), url(../../Imgs/OurTeamExperts/Woman.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            
+                text-align: center;
+
+                .ExpertPhotoHeader {
+                    @extend %expPhotoHeader
+                }
+
+                .ExpertPhotoParagraph {
+                    @extend %expPhotoParagraph
+                }
+            }
+
+            & > div {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
